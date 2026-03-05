@@ -9,7 +9,7 @@ import fs from "fs/promises";
 import * as pdfParseModule from "pdf-parse";
 import mammoth from "mammoth";
 import { pipeline } from "@xenova/transformers";
-import { openai } from "./replit_integrations/image/client";
+import { openai } from "./openai-client";
 
 // Setup multer for file uploads
 const upload = multer({
@@ -181,8 +181,9 @@ Question: ${query}
 
 Answer:`;
 
+      const model = process.env.OPENAI_MODEL || "gpt-4o";
       const response = await openai.chat.completions.create({
-        model: "gpt-5.1",
+        model,
         messages: [{ role: "user", content: prompt }],
       });
       
