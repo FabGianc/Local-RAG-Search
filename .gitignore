@@ -4,3 +4,5 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+# Documenti caricati dagli utenti: mai in repository
+uploads/
