@@ -6,3 +6,8 @@ vite.config.ts.*
 *.tar.gz
 # Documenti caricati dagli utenti: mai in repository
 uploads/
+
+# Variabili d'ambiente e credenziali: mai in repository
+.env
+.env.*
+!.env.example

@@ -37,3 +37,9 @@ A local document search engine using Retrieval-Augmented Generation (RAG) over P
 
 ## Supported Document Formats
 PDF, TXT, DOC, DOCX
+
+## Self-hosting
+See [`DEPLOY.md`](DEPLOY.md) for the local installation guide (in Italian).
+
+## License
+Distributed under the [GNU General Public License v3.0](LICENSE).
